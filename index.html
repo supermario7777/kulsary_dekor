@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Идеальные ТВ зоны</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link type="image/x-icon" href="images/favicon.png" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Идеальные ТВ зоны</div>
+        <p class="header-text">Создай уют, добавь свой стиль</p>
+        <button id="openModal">Оставить заявку</button>
+    </header>
+    
+    <main>
+        <h2 id="flashing-text">Окончательная цена на ТВ зону зависит от ее размера</h2>
+
+        <section class="gallery">
+            <h3>Категория 1: от 200 тыс тенге</h3>
+            <div class="image-gallery" id="gallery1">
+                <img src="images/img1.jpeg" alt="Gallery 1" class="gallery-image" />
+                <img src="images/img2.jpeg" alt="Gallery 1" class="gallery-image" />
+                <img src="images/img3.jpeg" alt="Gallery 1" class="gallery-image" />
+                <img src="images/img4.jpeg" alt="Gallery 1" class="gallery-image" />
+                <div class="controls">
+                    <button class="prev" onclick="changeImage('gallery1', -1)">&#9664;</button>
+                    <button class="next" onclick="changeImage('gallery1', 1)">&#9654;</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h3>Категория 2: от 280 тыс тенге</h3>
+            <div class="image-gallery" id="gallery2">
+                <img src="images/img5.jpeg" alt="Gallery 2" class="gallery-image" />
+                <img src="images/img6.jpeg" alt="Gallery 2" class="gallery-image" />
+                <img src="images/img7.jpeg" alt="Gallery 2" class="gallery-image" />
+                <img src="images/img8.jpeg" alt="Gallery 2" class="gallery-image" />
+                <div class="controls">
+                    <button class="prev" onclick="changeImage('gallery2', -1)">&#9664;</button>
+                    <button class="next" onclick="changeImage('gallery2', 1)">&#9654;</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h3>Категория 3: от 300 тыс тенге</h3>
+            <div class="image-gallery" id="gallery3">
+                <img src="images/img9.jpeg" alt="Gallery 3" class="gallery-image" />
+                <img src="images/img10.jpeg" alt="Gallery 3" class="gallery-image" />
+                <img src="images/img11.jpeg" alt="Gallery 3" class="gallery-image" />
+                <div class="controls">
+                    <button class="prev" onclick="changeImage('gallery3', -1)">&#9664;</button>
+                    <button class="next" onclick="changeImage('gallery3', 1)">&#9654;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://wa.me/77088996398" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" style="fill: white;">
+            <path d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z"></path>
+        </svg></a>
+            <a href="https://instagram.com/kulsary_dekor" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" style="fill: white">
+            <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
+        </svg></a>
+        </div>
+        <p><a href="https://instagram.com/kulsary_dekor" class="kulsary_dekor">@kulsary_dekor</a>: наши решения — это гармония стиля и комфорта. Доверяйте лучшим!</p>
+    </footer>
+
+    <!-- Modal for form -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>Оставить заявку</h2>
+            <form id="form">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="category">Выберите категорию</label>
+                <select id="category" name="category">
+                    <option value="200">Категория 1: от 200 тыс тенге</option>
+                    <option value="280">Категория 2: от 280 тыс тенге</option>
+                    <option value="300">Категория 3: отт 300 тыс тенге</option>
+                </select>
+                <button type="button" onclick="submitForm()">Отправить</button>
+            </form>
+            <button class="close-btn" onclick="closeModal()">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

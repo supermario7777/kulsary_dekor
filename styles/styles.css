@@ -1,0 +1,196 @@
+/* Основные стили */
+body {
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #0F2443;
+    /* Ярко-красный */
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.header-text {
+    font-size: medium;
+    margin-top: 10px;
+    color: #fff;
+}
+
+h2,
+h3 {
+    text-align: center;
+    color: #0F2443;
+}
+
+.gallery {
+    margin: 20px;
+    text-align: center;
+}
+
+.image-gallery {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 300px;
+    /* Фиксированная высота картинок */
+    object-fit: contain;
+    /* Сохранение пропорций без обрезки */
+    display: none;
+}
+
+.gallery-image:first-child {
+    display: block;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+button {
+    background-color: white;
+    color: #0F2443;
+    border: 1px solid #0F2443;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    background-color: #0F2443;
+    /* Ярко-красный */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    /* Ограничиваем максимальную ширину модального окна */
+    box-sizing: border-box;
+}
+
+input,
+select {
+    width: calc(100% - 24px);
+    /* Убираем лишние отступы */
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    /* Для корректного вычисления ширины с учетом паддингов */
+}
+
+button[type="button"] {
+    width: calc(100% - 24px);
+    /* Ограничиваем ширину кнопки, чтобы она не выходила за пределы */
+    padding: 12px;
+    background-color: #0F2443;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+button[type="button"]:hover {
+    background-color: #0F2443;
+}
+
+.close-btn {
+    background-color: #aaa;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+}
+
+.kulsary_dekor {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.logo {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: medium;
+}
+
+h3 {
+    font-size: small;
+}
+
+
+@keyframes flash {
+    0% {
+        color: #ff0000;
+    }
+
+    25% {
+        color: #00ff00;
+    }
+
+    50% {
+        color: #0000ff;
+    }
+
+    75% {
+        color: #ff00ff;
+    }
+
+    100% {
+        color: #ff0000;
+    }
+}
+
+#flashing-text {
+    font-size: medium;
+    font-weight: bold;
+    animation: flash 10s infinite;
+}
