@@ -34,7 +34,7 @@ function submitForm ()
     const phone = document.getElementById( 'phone' ).value;
     const category = document.getElementById( 'category' ).value;
 
-    const message = `Имя: ${name}%0AТелефон: ${phone}%0AКатегория: ${category} тыс тенге`;
+    const message = `Добрый день, Мухтар! Я хотел бы сделать заказ на ТВ зону, не могли бы Вы со мной связаться? Имя: ${name}%0AТелефон: ${phone}%0AКатегория: ${category} тыс тенге`;
 
     const whatsappUrl = `https://wa.me/77088996398?text=${message}`;
     window.open( whatsappUrl, '_blank' );
