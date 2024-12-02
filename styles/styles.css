@@ -4,7 +4,8 @@ body {
     font-optical-sizing: auto;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    /* background-color: white; */
+    background-image: url(/images/background-img.jpg);
 }
 
 header {
@@ -16,15 +17,16 @@ header {
 }
 
 .header-text {
-    font-size: medium;
+    font-size: large;
     margin-top: 10px;
     color: #fff;
+    font-weight: bold;
 }
 
 h2,
 h3 {
     text-align: center;
-    color: #0F2443;
+    color: white;
 }
 
 .gallery {
@@ -41,7 +43,7 @@ h3 {
 
 .gallery-image {
     width: 100%;
-    height: 300px;
+    height: 550px;
     /* Фиксированная высота картинок */
     object-fit: contain;
     /* Сохранение пропорций без обрезки */
@@ -69,6 +71,10 @@ button {
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
+}
+
+.submit-req {
+    color: red;
 }
 
 button:hover {
@@ -157,6 +163,7 @@ button[type="button"]:hover {
 
 .logo {
     font-size: xx-large;
+    font-weight: bold;
 }
 
 h2 {
@@ -194,4 +201,30 @@ h3 {
     font-size: medium;
     font-weight: bold;
     animation: flash 10s infinite;
+}
+
+.responsive-logo {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+footer p {
+    margin: 0px;
+    font-weight: bold;
+}
+
+video {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+.body-vid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    background-color: #fff;
 }

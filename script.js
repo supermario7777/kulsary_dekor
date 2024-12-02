@@ -3,7 +3,16 @@ function changeImage ( galleryId, direction )
 {
     const gallery = document.getElementById( galleryId );
     const images = gallery.getElementsByTagName( 'img' );
-    let currentIndex = Array.from( images ).findIndex( img => img.style.display !== 'none' );
+
+    // Инициализация: скрыть все картинки кроме первой
+    if ( !images[ 0 ].style.display ) {
+        Array.from( images ).forEach( ( img, index ) =>
+        {
+            img.style.display = index === 0 ? 'block' : 'none';
+        } );
+    }
+
+    let currentIndex = Array.from( images ).findIndex( img => img.style.display === 'block' );
 
     // Скрыть текущую картинку
     images[ currentIndex ].style.display = 'none';
@@ -14,6 +23,7 @@ function changeImage ( galleryId, direction )
     // Показать новую картинку
     images[ currentIndex ].style.display = 'block';
 }
+
 
 // Открытие модального окна
 document.getElementById( 'openModal' ).addEventListener( 'click', () =>
@@ -34,7 +44,8 @@ function submitForm ()
     const phone = document.getElementById( 'phone' ).value;
     const category = document.getElementById( 'category' ).value;
 
-    const message = `Добрый день, Мухтар! Я хотел бы сделать заказ на ТВ зону, не могли бы Вы со мной связаться? Имя: ${name}%0AТелефон: ${phone}%0AКатегория: ${category} тыс тенге`;
+    const message = `Салеметсізбе! 
+Тв зона қондыру жөнінде білгім келеді! Имя: ${name}%0AТелефон: ${phone}%0AКатегория: ${category} тыс тенге`;
 
     const whatsappUrl = `https://wa.me/77068303193?text=${message}`;
     window.open( whatsappUrl, '_blank' );

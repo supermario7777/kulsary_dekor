@@ -10,21 +10,33 @@
 </head>
 <body>
     <header>
-        <div class="logo">Идеальные ТВ зоны</div>
-        <p class="header-text">Создай уют, добавь свой стиль</p>
-        <button id="openModal">Оставить заявку</button>
+        <img src="images/favicon.png" alt="company-logo" class="responsive-logo">
+        <div class="logo">Идеальные ТВ зоны в <br>г. Кульсары</div></div>
+        <p class="header-text">Материал + Доставка + Установка</p>
+        <button class="submit-req" id="openModal">Оставить заявку</button>
     </header>
+
+    <div class="body-vid">
+        <video autoplay loop>
+            <source src="videos/body-vid.mp4" type="video/mp4">
+            Ваш браузер не поддерживает элемент video.
+        </video>
+    </div>
     
     <main>
         <h2 id="flashing-text">Окончательная цена на ТВ зону зависит от ее размера</h2>
 
         <section class="gallery">
-            <h3>Категория 1: от 200 тыс тенге</h3>
+            <h3>Старт: от 200 тыс тенге</h3>
             <div class="image-gallery" id="gallery1">
-                <img src="images/img1.jpeg" alt="Gallery 1" class="gallery-image" />
-                <img src="images/img2.jpeg" alt="Gallery 1" class="gallery-image" />
-                <img src="images/img3.jpeg" alt="Gallery 1" class="gallery-image" />
-                <img src="images/img4.jpeg" alt="Gallery 1" class="gallery-image" />
+                <img src="images/Start/img1.jpeg" alt="Gallery 1" class="gallery-image" />
+                <img src="images/Start/img2.jpeg" alt="Gallery 1" class="gallery-image" />
+                <img src="images/Start/img3.jpeg" alt="Gallery 1" class="gallery-image" />
+                <img src="images/Start/img4.jpeg" alt="Gallery 1" class="gallery-image" />
+                <img src="images/Start/img5.jpeg" alt="Gallery 1" class="gallery-image" />
+                <img src="images/Start/img6.jpeg" alt="Gallery 1" class="gallery-image" />
+                <img src="images/Start/img7.jpeg" alt="Gallery 1" class="gallery-image" />
+                <img src="images/Start/img8.jpeg" alt="Gallery 1" class="gallery-image" />
                 <div class="controls">
                     <button class="prev" onclick="changeImage('gallery1', -1)">&#9664;</button>
                     <button class="next" onclick="changeImage('gallery1', 1)">&#9654;</button>
@@ -33,12 +45,17 @@
         </section>
 
         <section class="gallery">
-            <h3>Категория 2: от 280 тыс тенге</h3>
+            <h3>Уют: от 280 тыс тенге</h3>
             <div class="image-gallery" id="gallery2">
-                <img src="images/img5.jpeg" alt="Gallery 2" class="gallery-image" />
-                <img src="images/img6.jpeg" alt="Gallery 2" class="gallery-image" />
-                <img src="images/img7.jpeg" alt="Gallery 2" class="gallery-image" />
-                <img src="images/img8.jpeg" alt="Gallery 2" class="gallery-image" />
+                <img src="images/Cozy/img9.jpeg" alt="Gallery 2" class="gallery-image" />
+                <img src="images/Cozy/img10.jpeg" alt="Gallery 2" class="gallery-image" />
+                <img src="images/Cozy/img11.jpeg" alt="Gallery 2" class="gallery-image" />
+                <img src="images/Cozy/img12.jpeg" alt="Gallery 2" class="gallery-image" />
+                <img src="images/Cozy/img13.jpeg" alt="Gallery 2" class="gallery-image" />
+                <img src="images/Cozy/img14.jpeg" alt="Gallery 2" class="gallery-image" />
+                <img src="images/Cozy/img15.jpeg" alt="Gallery 2" class="gallery-image" />
+                <img src="images/Cozy/img16.jpeg" alt="Gallery 2" class="gallery-image" />
+                <img src="images/Cozy/img17.jpeg" alt="Gallery 2" class="gallery-image" />
                 <div class="controls">
                     <button class="prev" onclick="changeImage('gallery2', -1)">&#9664;</button>
                     <button class="next" onclick="changeImage('gallery2', 1)">&#9654;</button>
@@ -47,17 +64,40 @@
         </section>
 
         <section class="gallery">
-            <h3>Категория 3: от 360 тыс тенге</h3>
+            <h3>Комфорт: от 360 тыс тенге</h3>
             <div class="image-gallery" id="gallery3">
-                <img src="images/img9.jpeg" alt="Gallery 3" class="gallery-image" />
-                <img src="images/img10.jpeg" alt="Gallery 3" class="gallery-image" />
-                <img src="images/img11.jpeg" alt="Gallery 3" class="gallery-image" />
+                <img src="images/Comfort/img20.jpeg" alt="Gallery 3" class="gallery-image" />
+                <img src="images/Comfort/img21.jpeg" alt="Gallery 3" class="gallery-image" />
+                <img src="images/Comfort/img22.jpeg" alt="Gallery 3" class="gallery-image" />
+                <img src="images/Comfort/img23.jpeg" alt="Gallery 3" class="gallery-image" />
+                <img src="images/Comfort/img24.jpeg" alt="Gallery 3" class="gallery-image" />
+                <img src="images/Comfort/img25.jpeg" alt="Gallery 3" class="gallery-image" />
+                <img src="images/Comfort/img26.jpeg" alt="Gallery 3" class="gallery-image" />
+                <img src="images/Comfort/img27.jpeg" alt="Gallery 3" class="gallery-image" />
+                <img src="images/Comfort/img28.jpeg" alt="Gallery 3" class="gallery-image" />
+                <img src="images/Comfort/img29.jpeg" alt="Gallery 3" class="gallery-image" />
+                <img src="images/Comfort/img30.jpeg" alt="Gallery 3" class="gallery-image" />
                 <div class="controls">
                     <button class="prev" onclick="changeImage('gallery3', -1)">&#9664;</button>
                     <button class="next" onclick="changeImage('gallery3', 1)">&#9654;</button>
                 </div>
             </div>
         </section>
+
+        
+        <!-- <section class="gallery">
+            <h3>Премиум: от 500 тыс тенге</h3>
+            <div class="image-gallery" id="gallery4">
+                <img src="images/img9.jpeg" alt="Gallery 4" class="gallery-image" />
+                <img src="images/img10.jpeg" alt="Gallery 4" class="gallery-image" />
+                <img src="images/img11.jpeg" alt="Gallery 4" class="gallery-image" />
+                <div class="controls">
+                    <button class="prev" onclick="changeImage('gallery4', -1)">&#9664;</button>
+                    <button class="next" onclick="changeImage('gallery4', 1)">&#9654;</button>
+                </div>
+            </div>
+        </section> -->
+
     </main>
 
     <footer>
@@ -69,7 +109,9 @@
             <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
         </svg></a>
         </div>
-        <p><a href="https://instagram.com/kulsary_dekor" class="kulsary_dekor">@kulsary_dekor</a>: наши решения — это гармония стиля и комфорта. Доверяйте лучшим!</p>
+        <p><a href="https://instagram.com/kulsary_dekor" class="kulsary_dekor">Instagram: kulsary_dekor</a></p>
+        <p>TikTok: kulsary_dekor</p>
+        <p>+77068303193</p>
     </footer>
 
     <!-- Modal for form -->
@@ -83,9 +125,10 @@
                 <input type="tel" id="phone" name="phone" required>
                 <label for="category">Выберите категорию</label>
                 <select id="category" name="category">
-                    <option value="200">Категория 1: от 200 тыс тенге</option>
-                    <option value="280">Категория 2: от 280 тыс тенге</option>
-                    <option value="360">Категория 3: отт 360 тыс тенге</option>
+                    <option value="200">Старт: от 200 тыс тенге</option>
+                    <option value="280">Уют: от 280 тыс тенге</option>
+                    <option value="360">Комфорт: от 360 тыс тенге</option>
+                    <!-- <option value="500">Премиум: от 500 тыс тенге</option> -->
                 </select>
                 <button type="button" onclick="submitForm()">Отправить</button>
             </form>
