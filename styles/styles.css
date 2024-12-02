@@ -228,3 +228,11 @@ video {
     padding: 20px 20px 20px 20px;
     background-color: #fff;
 }
+
+
+button.prev:hover,
+button.next:hover {
+    background: white;
+    color: inherit;
+    /* Отключаем изменение цвета на hover */
+}
